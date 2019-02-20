@@ -1,0 +1,44 @@
+.site-footer
+  padding: 80px 15px
+  position: relative
+  margin-top: 100px
+.footer-wrap
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  padding: 40px 0
+  border-top: 1px solid #dedede
+  border-bottom: 1px solid #dedede
+  width: 80%
+.footer__pic
+  position: absolute
+  right: 0
+  bottom: 0
+  max-height: 400px
+
+
+@media (max-width: 1080px)
+  .footer-wrap
+    flex-direction: column
+  .header-logo--footer
+    margin-right: 0
+    z-index: 9
+  .footer-menu
+    z-index: 9
+
+@media (max-width: 940px)
+  .footer-wrap
+    align-items: flex-start
+@media (max-width: 810px)
+  .footer-menu
+    display: grid
+    grid-gap: 15px
+@media (max-width: 540px)
+  .footer__pic
+    max-height: 350px
+  .site-footer
+    margin-top: 0
+
+@media (max-width: 380px)
+  .footer__pic
+    max-height: 300px

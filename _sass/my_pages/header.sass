@@ -1,0 +1,48 @@
+.site-header
+  position: absolute
+  width: 100%
+  
+.header-wrap
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  height: 160px
+.header-logo
+  margin-right: 160px
+.header-menu__link
+  font-size: 16px
+  font-weight: 500
+  text-decoration: none
+  color: $p-color
+  margin-right: 40px
+  transition: $def-anim
+.header-menu__link:hover
+  color: $accent
+.header-menu__link--active, .header-menu__link--active:hover
+  font-weight: 800
+  color: $h-color
+
+// mmenu
+header
+  .hamburger
+    display: none
+header
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after,
+    background-color: $accent
+  .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after
+    background-color: $accent
+
+
+@media (max-width: 910px)
+  .header-menu
+    display: none
+  header
+    .hamburger
+      display: block
+      padding: 0
+  .header-wrap
+    justify-content: space-between
+  .header-logo
+    margin-right: 0
+  .header-wrap
+    height: 100px

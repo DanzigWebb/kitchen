@@ -1,0 +1,312 @@
+.main-screen
+  background-image: url(img/mainbg.jpg)
+  background-size: cover
+  background-position: top center
+  height: 570px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+.screen-wrap
+  width: 100%
+  display: flex
+  justify-content: flex-start
+.screen-wrap-content
+  width: 60%
+
+.main-screen-buttons
+  margin-top: 60px
+  display: flex
+  justify-content: space-between
+  align-items: center
+.main-screen-watch
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 50%
+
+.main-screen-watch__txt
+  font-size: 18px
+  font-weight: 500
+.main-screen-watch__play
+  color: #fff
+  font-size: 20px
+  background: $accent
+  border-radius: 50%
+  padding: 10px
+  width: 60px
+  height: 60px
+  text-align: right
+  line-height: 60px
+  font-weight: 800
+  box-shadow: 0 9px 28px rgba(249, 129, 105, 0.68)
+.main-screen-watch__play:hover
+  box-shadow: 0 3px 18px rgba(249, 129, 105, 0.38)
+  color: #fff
+
+@media (max-width: 760px)
+  .screen-wrap-content
+    width: 80%
+@media (max-width: 580px)
+  .screen-wrap-content
+    width: 100%
+@media (max-width: 475px)
+  .main-screen-buttons
+    flex-direction: column
+    align-items: flex-start
+  .main-btn--main-screen
+    margin-bottom: 30px
+  .main-screen-watch
+    width: 100%
+  .main-screen-watch__play
+    margin-right: 60px
+  .main-screen
+    height: 670px
+
+// первая секция о нас
+.about
+  background-image: url(img/about__bg.jpg)
+  background-size: cover
+  background-position: bottom top center
+.about-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 60px
+.about-img
+  width: 100%
+  margin-right: 80px
+.about-img__pic
+  width: 100%
+  border-radius: 100px 0 100px 0
+  box-shadow: 0 47px 99px #C5C9CB
+
+
+.about-heading__title
+  margin: 0
+  margin-bottom: 40px
+.about-heading__txt, .about-heading__title
+  width: 70%
+.about-heading__txt
+  margin-bottom: 60px
+.about-second-heading
+  width: 80%
+  margin-right: 10px
+
+
+@media (max-width: 855px)
+  .about-heading__txt, .about-heading__title
+    width: 100%
+  .about-img__pic
+    width: 125%
+@media (max-width: 685px)
+  .about-wrap
+    flex-direction: column-reverse
+    align-items: center
+  .about-heading
+    margin-bottom: 80px
+  .about-img
+    margin-right: 0
+    width: 80%
+    text-align: center
+  .about-img__pic
+    width: 80%
+@media (max-width: 385px)
+  .about-img
+    width: 100%
+
+.about-wrap--second
+  display: flex
+  justify-content: space-between
+  align-items: center
+.second-heading__txt, .second-heading__title
+  width: 100%
+.about-imgbox
+  display: grid
+  width: 100%
+  grid-template-columns: repeat(6, 1fr)
+  grid-template-rows: repeat(7, 60px)
+  row-gap: 10px
+.about-imgbox__pic:nth-child(1)
+  background-image: url(img/img-box_1.jpg)
+  grid-column-start: 2
+  grid-column-end: 4
+  grid-row-start: 3
+  grid-row-end: 5
+  position: relative
+  right: 5px
+.about-imgbox__pic:nth-child(2)
+  background-image: url(img/img-box_2.jpg)
+  grid-column-start: 4
+  grid-column-end: 7
+  grid-row-start: 1
+  grid-row-end: 4
+.about-imgbox__pic:nth-child(3)
+  background-image: url(img/img-box_3.jpg)
+  grid-column-start: 1
+  grid-column-end: 4
+  grid-row-start: 5
+  grid-row-end: 8
+.about-imgbox__pic:nth-child(4)
+  background-image: url(img/img-box_4.jpg)
+  grid-column-start: 4
+  grid-column-end: 6
+  grid-row-start: 4
+  grid-row-end: 6
+  position: relative
+  left: 5px
+.about-imgbox__pic
+  background-size: cover
+  border-radius: 5px
+
+@media (max-width: 665px)
+  .about-wrap--second
+    flex-direction: column
+@media (max-width: 375px)
+  .about-second-heading
+    width: 100%
+  .about-imgbox
+    grid-template-rows: repeat(7, 40px)
+
+// тригер
+.trigger
+  padding: 0 15px
+.trigger-wrap
+  background-image: url(img/trigger.jpg)
+  background-size: cover
+  background-position: top center
+  text-align: center
+  padding: 60px 15px
+  border-radius: 5px
+.trigger-content
+  width: 55%
+  margin: auto
+
+.main-screen-watch__play--transporent
+  border: 2px solid #fff
+  text-align: right
+  display: block
+  margin: auto
+  height: 40px
+  width: 40px
+  line-height: 40px
+  box-shadow: none
+  background-color: transparent
+.main-screen-watch__play--transporent:hover
+  background-color: $accent
+
+.p-normal--watch
+  color: #fff
+  font-weight: 700
+  opacity: 0.8
+
+@media (max-width: 645px)
+  .trigger-content
+    width: 70%
+@media (max-width: 475px)
+  .trigger-content
+    width: 95%
+  .trigger
+    padding: 0
+
+
+// продукты
+
+.products-heading
+  text-align: center
+  margin-bottom: 60px
+
+.products-wrap
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: flex-start
+
+.products-item
+  width: 30%
+  margin-bottom: 40px
+  border-radius: 7px
+  box-shadow: 0 17px 16px rgba(235, 241, 245, 0.55)
+  text-decoration: none
+  transition: $def-anim
+.products-item:hover
+  box-shadow: 0 17px 16px rgba(200, 204, 208, 0.9)
+  .products-name__title
+    color: $accent
+.products-name__title
+  transition: $def-anim
+.products-item-heading
+  padding: 20px
+.products-item__pic
+  width: 100%
+  border-radius: 7px
+
+.products-name
+  display: flex
+  justify-content: space-between
+  align-items: center
+.products-name__price
+  font-size: 22px
+  font-weight: 800
+  color: $accent
+  font-family: 'EB Garamond', serif
+.products-item__descr
+  margin: 0
+
+.products-btn
+  text-align: center
+  margin-top: 60px
+
+@media (max-width: 700px)
+  .products-item
+    width: 48%
+@media (max-width: 465px)
+  .products-item
+    width: 98%
+
+// рецепты
+
+.recipes
+  text-align: center
+.recipes-wrap
+  max-width: 1340px
+  margin: auto
+.recipes__title
+  margin-bottom: 80px
+.recipes-item
+  position: relative
+  transition: $def-anim
+  cursor: pointer
+  text-align: left
+  
+.recipes-item-descr
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  padding-bottom: 20px
+  padding: 20px
+  background: rgba(11, 49, 75, 0.8)
+  transition: $def-anim
+  display: flex
+  justify-content: flex-end
+  flex-direction: column
+  opacity: 0
+  color: #fff
+  .fas
+    position: absolute
+    bottom: 0
+    right: 0
+    color: #fff
+    padding: 10px 20px
+    background-color: $accent
+
+.recipes-item:hover
+  .recipes-item-descr
+    opacity: 1
+
+.recipes-item-descr__title
+  color: #fff
+  margin: 0
+.recipes-item-descr__txt
+  color: #fff

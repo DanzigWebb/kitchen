@@ -1,0 +1,123 @@
+$accent: #F98169
+$gray: #bababa
+$p-color: #8B8E8F
+$h-color: #0C3653
+$violin: #452268
+$gatter: 15px
+
+$def-anim: .22s ease-in-out
+// основные
+
+.container
+  max-width: 1200px
+  padding: 0 15px
+  margin: auto
+  
+.container-flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+.site-section
+  padding: 80px 0
+@media (max-width: 770px)
+  .site-section
+    padding: 40px 0
+
+// кнопка
+
+.main-btn
+  background-color: $accent
+  padding: 18px 45px
+  border: 1px solid $accent
+  color: #fff
+  font-size: 18px
+  box-shadow: 0 9px 28px rgba(249, 129, 105, 0.68)
+  text-decoration: none
+  transition: all .3s ease-in-out
+  font-weight: 800
+.main-btn:hover
+  box-shadow: 0 3px 18px rgba(249, 129, 105, 0.38)
+  
+.main-btn--reverse
+  background-color: #fff
+  color: #333333
+  font-weight: 700
+.main-btn--reverse:hover
+  background-color: $accent
+  color: #fff
+  
+// типографика
+
+body
+  font-family: 'Muli', sans-serif
+  color: $p-color
+  line-height: 1.4
+  margin: 0
+  position: relative
+p 
+  color: $p-color
+h1, h2, h3, h4, h5
+  font-family: 'EB Garamond', serif
+  color: $h-color
+  
+.site-link
+  color: $h-color
+  text-decoration: none
+  transition: $def-anim
+.site-link:hover
+  color: $accent
+  
+.title-one
+  font-size: 57px
+  font-weight: 300
+  color: #255A7E
+  line-height: 1.1
+  font-family: 'Muli', sans-serif
+.title-second
+  font-size: 36px
+  font-weight: 800
+  line-height: 1.2
+  font-family: 'EB Garamond', serif
+.title-second--white
+  color: #fff
+.title-third
+  font-size: 20px
+  font-weight: 800
+  line-height: 1.2
+  color: $h-color
+  letter-spacing: 0px
+  font-family: 'EB Garamond', serif
+.title-four
+  font-size: 16px
+  font-weight: 800
+  font-family: 'EB Garamond', serif
+@media (max-width: 680px)
+  .title-one
+    font-size: 48px
+@media (max-width: 500px)
+  .title-one
+    font-size: 42px
+  .title-second
+    font-size: 30px
+  
+.p-normal
+  font-size: 16px
+  font-weight: 300
+  line-height: 1.4
+.p-normal--white
+  color: #fff
+.p-small
+  font-size: 14px
+.p-italic
+  font-style: italic
+  
+.h-color
+  color: $h-color
+.main-link
+  font-size: 16px
+  font-weight: 500
+  text-decoration: none
+  color: $h-color
+  transition: all .3s ease-in-out
+.main-link:hover
+  color: $accent
